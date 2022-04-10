@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>White unisex t-shirt</title>
+</head>
+<body>
+<header class="header">
+    <nav class="header__navigation">
+        <ul class="header__nav-list">
+            <li class="header__nav-item">
+                <a href="/women">Women</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="/men">Men</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="/kids">Kids</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="/company">Company</a>
+            </li>
+        </ul>
+    </nav>
+    <a class="header__logo" href="/">
+        <img src="images/logo.svg" alt="Logo Susparsa"/>
+    </a>
+    <div class="header__col-right">
+        <a href="/account">Account</a>
+        <a href="/search">Search</a>
+        <a href="/cart">Cart</a>
+    </div>
+</header>
+<main>
+    <section aria-label="Breadcrumbs">
+        <nav class="breadcrumbs">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="/">Home /</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="/">Women /</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="/">White unisex t-shirt /</a>
+                </li>
+            </ol>
+        </nav>
+    </section>
+    <section class="product" aria-label="Product info">
+        <div class="product__media">
+            <img src="images/product.jpg" alt="Girl in white t-shirt"/>
+        </div>
+        <div class="product__info">
+            <h2 class="product__name">White unisex t-shirt</h2>
+            <p class="product__size-info">CHF 40</p>
+            <p class="product__tax-info">Tax included</p>
+            <form class="product__form" action="/cart" name="product form">
+                <div class="product__sizes">
+                    <label class="product__size-label" aria-labelledby="product-sizes"></label>
+                    <ul class="product__size-list" id="product-sizes">
+                        <li class="product__size-item">
+                            <input type="radio" title="xs" id="xs" name="sizes" value="xs">
+                            <label for="xs">xs</label>
+                        </li>
+                        <li class="product__size-item">
+                            <input type="radio" id="s" title="s"  name="sizes" value="s" checked>
+                            <label for="s">s</label>
+                        </li>
+                        <li class="product__size-item">
+                            <input type="radio" id="m" title="m" name="sizes" value="m">
+                            <label for="m">m</label>
+                        </li>
+                        <li class="product__size-item">
+                            <input type="radio" id="l" title="l" name="sizes" value="l">
+                            <label for="l">l</label>
+                        </li>
+                        <li class="product__size-item">
+                            <input type="radio" id="xl" title="xl" name="sizes" value="xl">
+                            <label for="xl">xl</label>
+                        </li>
+                        <li class="product__size-item product__size-item--out-of-stock">
+                            <input type="radio" id="2xl" title="2xl" name="sizes" value="2xl">
+                            <label for="2xl">2xl</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product__colors">
+                    <label class="product__color-label" aria-labelledby="product-colors"></label>
+                    <ul class="product__color-list" id="product-colors">
+                        <li class="product__color-item product__color-item--white">
+                            <input type="radio" id="white" title="white" name="colors" value="white" checked>
+                            <label class="visually-hidden" for="white">white</label>
+                        </li>
+                        <li class="product__color-item product__color-item--black">
+                            <input type="radio" id="black" title="black" name="colors" value="black">
+                            <label for="black">black</label>
+                        </li>
+                        <li class="product__color-item product__color-item--gray">
+                            <input type="radio" id="gray" title="gray" name="colors" value="gray">
+                            <label for="gray">gray</label>
+                        </li>
+                        <li class="product__color-item product__color-item--purple">
+                            <input type="radio" id="purple" title="purple" name="colors" value="purple">
+                            <label for="purple">purple</label>
+                        </li>
+                        <li class="product__color-item  product__color-item--pink product__color-item--out-of-stock">
+                            <input type="radio" id="pink" title="pink" name="colors" value="pink">
+                            <label for="pink">pink</label>
+                        </li>
+                        <li class="product__color-item  product__color-item--orange product__color-item--out-of-stock">
+                            <input type="radio" id="orange" title="orange" name="colors" value="orange">
+                            <label for="orange">orange</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product__count">
+                    <label for="product-count">Qantity</label>
+                    <div class="product__count-wrapper">
+                        <button class="product__count-button" type="button" aria-label="Reduce count">-</button>
+                        <input id="product-count" type="number" class="product__count-input">
+                        <button class="product__count-button" type="button" aria-label="Increase count">+</button>
+                    </div>
+                </div>
+                <button type="button" class="product__button product__button--add-to-cart">Add to cart</button>
+                <button type="submit" class="product__button product__button--buy-now">Buy it now</button>
+                <p class="product__additional-info">
+                    A unisex basic garment with a loose fit. Light and comfortable to your skin.
+                </p>
+                <p class="product__certification-info">Certification of cotton - GOTS</p>
+            </form>
+        </div>
+        <div class="product__description">
+            <div id="description-accordion" class="product__accordion accordion">
+                <h3 class="product__tab-heading accordion__heading">
+                    <button type="button" class="accordion__button" aria-expanded="true" aria-controls="sizing"
+                            id="size-name">
+      <span class="accordion__title">
+        Sizing & Fit
+        <span class="accordion__icon"></span>
+      </span>
+                    </button>
+                </h3>
+                <div id="sizing"
+                     role="region"
+                     aria-labelledby="size-name"
+                     class="accordion__panel">
+                    <p>
+                        Olga is 175cm, she is wearing a size S.
+                    </p>
+                </div>
+                <h3 class="product__tab-heading accordion__heading">
+                    <button type="button" class="accordion__button" aria-expanded="true" aria-controls="composition"
+                            id="composition-name">
+                        <span class="accordion__title">
+        Composition & Care
+        <span class="accordion__icon"></span>
+      </span>
+                    </button>
+                </h3>
+                <div id="composition"
+                     role="region"
+                     aria-labelledby="composition-name"
+                     class="accordion__panel">
+                    <p>
+                        Olga is 175cm, she is wearing a size S.
+                    </p>
+                </div>
+                <h3 class="product__tab-heading accordion__heading">
+                    <button type="button" class="accordion__button" aria-expanded="true" aria-controls="delivery"
+                            id="delivery-name">
+                        <span class="accordion__title">
+        Delivery & Returns
+        <span class="accordion__icon"></span>
+      </span>
+                    </button>
+                </h3>
+                <div id="delivery"
+                     role="region"
+                     aria-labelledby="delivery-name"
+                     class="accordion__panel">
+                    <p>
+                        Olga is 175cm, she is wearing a size S.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reference" aria-label="Reference products">
+        <h2 class="reference__heading">You may also like</h2>
+        <ul class="reference__list">
+            <li class="reference__item">
+                <article class="reference-card">
+                    <div class="reference-card__media">
+                        <img src="images/rec1.png" alt="Girl in pink hoodies"/>
+                    </div>
+                    <h3 class="reference-card__heading">Product name</h3>
+                    <ul class="reference-card__colors">
+                        <li class="reference-card__color-item reference-card__color-item--brown">
+                            <label class="visually-hidden">Brown</label>
+                        </li>
+                        <li class="reference-card__color-item reference-card__color-item--badge">
+                            <label class="visually-hidden">Badge</label>
+                        </li>
+                        <li class="reference-card__color-item reference-card__color-item--pink">
+                            <label class="visually-hidden">Pink</label>
+                        </li>
+                        <li class="reference-card__color-item reference-card__color-item--velvet">
+                            <label class="visually-hidden">Velvet</label>
+                        </li>
+                    </ul>
+                    <p class="reference-card__info">CHF 40</p>
+                </article>
+            </li>
+            <li class="reference__item">
+                <article class="reference-card">
+                    <div class="reference-card__media">
+                        <img src="images/rec2.png" alt="Girl in pink hoodies"/>
+                    </div>
+                    <h3 class="reference-card__heading">Product name</h3>
+                    <ul class="reference-card__colors">
+                        <li class="reference-card__color-item reference-card__color-item--brown">
+                            <label class="visually-hidden">Brown</label>
+                        </li>
+                        <li class="reference-card__color-item reference-card__color-item--badge">
+                            <label class="visually-hidden">Badge</label>
+                        </li>
+                        <li class="reference-card__color-item reference-card__color-item--pink">
+                            <label class="visually-hidden">Pink</label>
+                        </li>
+                        <li class="reference-card__color-item reference-card__color-item--velvet">
+                            <label class="visually-hidden">Velvet</label>
+                        </li>
+                    </ul>
+                    <p class="reference-card__info">CHF 40</p>
+                </article>
+            </li>
+            <li class="reference__item">
+                <article class="reference-card">
+                    <div class="reference-card__media">
+                        <img src="images/rec3.png" alt="Girl in pink hoodies"/>
+                    </div>
+                    <h3 class="reference-card__heading">Product name</h3>
+                    <ul class="reference-card__colors">
+                        <li class="reference-card__color-item reference-card__color-item--brown">
+                            <label class="visually-hidden">Brown</label>
+                        </li>
+                        <li class="reference-card__color-item reference-card__color-item--badge">
+                            <label class="visually-hidden">Badge</label>
+                        </li>
+                        <li class="reference-card__color-item reference-card__color-item--pink">
+                            <label class="visually-hidden">Pink</label>
+                        </li>
+                        <li class="reference-card__color-item reference-card__color-item--velvet">
+                            <label class="visually-hidden">Velvet</label>
+                        </li>
+                    </ul>
+                    <p class="reference-card__info">CHF 40</p>
+                </article>
+            </li>
+            <li class="reference__item">
+                <article class="reference-card">
+                    <div class="reference-card__media">
+                        <img src="images/rec4.png" alt="Girl in pink hoodies"/>
+                    </div>
+                    <h3 class="reference-card__heading">Product name</h3>
+                    <ul class="reference-card__colors">
+                        <li class="reference-card__color-item reference-card__color-item--brown">
+                            <label class="visually-hidden">Brown</label>
+                        </li>
+                        <li class="reference-card__color-item reference-card__color-item--badge">
+                            <label class="visually-hidden">Badge</label>
+                        </li>
+                        <li class="reference-card__color-item reference-card__color-item--pink">
+                            <label class="visually-hidden">Pink</label>
+                        </li>
+                        <li class="reference-card__color-item reference-card__color-item--velvet">
+                            <label class="visually-hidden">Velvet</label>
+                        </li>
+                    </ul>
+                    <p class="reference-card__info">CHF 40</p>
+                </article>
+            </li>
+        </ul>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__item">
+        <h2 class="footer__heading" id="about">About</h2>
+        <ul aria-labelledby="about" class="footer__list">
+            <li class="footer__list-item">Susparsa store</li>
+            <li class="footer__list-item">Geneva, Switzerland</li>
+            <li class="footer__list-item footer__list-item--socials">
+                <a href="/">
+                    <img src="images/facebook.svg" alt="Facebook icon">
+                </a>
+                <a href="/">
+                    <img src="images/instagram.svg" alt="Instagram icon">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__item">
+        <h2 class="footer__heading" id="company">Company</h2>
+        <ul aria-labelledby="company" class="footer__list">
+            <li class="footer__list-item">Women</li>
+            <li class="footer__list-item">Men</li>
+            <li class="footer__list-item">Kids</li>
+            <li class="footer__list-item">About us</li>
+            <li class="footer__list-item">Our materials</li>
+        </ul>
+    </div>
+    <div class="footer__item">
+        <h2 class="footer__heading" id="useful_links">Useful links</h2>
+        <ul aria-labelledby="useful_links" class="footer__list">
+            <li class="footer__list-item">Privacy Policy</li>
+            <li class="footer__list-item">Shipping policy</li>
+            <li class="footer__list-item">Return & Refund policy</li>
+            <li class="footer__list-item">Terms of Service</li>
+            <li class="footer__list-item">Contact us</li>
+        </ul>
+    </div>
+    <p class="footer__copyright">© Susparsa 2021</p>
+</footer>
+</body>
+</html>
