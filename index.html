@@ -9,123 +9,119 @@
 </head>
 <body>
 <header class="header">
+    <a href="#main-content" class="skip-link link">Skip to main content</a>
     <div class="container header__container">
-        <nav class="header__navigation navigation">
-            <ul class="header__nav-list navigation__list">
-                <li class="header__nav-item navigation__item">
+        <nav class="header-navigation navigation">
+            <ul class="header-navigation__list navigation__list">
+                <li class="header-navigation__item navigation__item">
                     <a class="link header__nav-link" href="/women">Women</a>
                 </li>
-                <li class="header__nav-item navigation__item">
-                    <a class="link header__nav-link" href="/men">Men</a>
+                <li class="header-navigation__item navigation__item">
+                    <a class="link header-navigation__link" href="/men">Men</a>
                 </li>
-                <li class="header__nav-item navigation__item">
-                    <a class="link header__nav-link" href="/kids">Kids</a>
+                <li class="header-navigation__item navigation__item">
+                    <a class="link header-navigation__link" href="/kids">Kids</a>
                 </li>
-                <li class="header__nav-item navigation__item">
-                    <a class="link header__nav-link" href="/company">Company</a>
+                <li class="header-navigation__item navigation__item">
+                    <a class="link header-navigation__link" href="/company">Company</a>
                 </li>
             </ul>
         </nav>
         <a class="header__logo" href="/">
-            <img class="header__image" src="assets/images/logo.svg" alt="Logo Susparsa"/>
+            <img class="header__image" src="assets/images/logo.svg" alt=""/>
         </a>
-        <div class="header__col-right navigation">
+        <nav class="col-right navigation">
             <a class="link navigation__item" href="/account">Account</a>
             <a class="link navigation__item" href="/search">Search</a>
             <a class="link navigation__item" href="/cart">Cart <span aria-label="Cart's count"
                                                                      class="cart-count">(0)</span></a>
-        </div>
+        </nav>
     </div>
 </header>
-<main>
-    <section aria-label="Breadcrumbs">
-        <nav class="breadcrumbs container">
-            <ol class="breadcrumbs__list">
-                <li class="breadcrumbs__item">
-                    <a class="link" href="/">Home </a>
-                </li>
-                <li class="breadcrumbs__item">
-                    <a class="link" href="/">Women </a>
-                </li>
-                <li class="breadcrumbs__item breadcrumbs__item--current">
-                    <a class="link" href="/">White unisex t-shirt </a>
-                </li>
-            </ol>
-        </nav>
-    </section>
+<main id="main-content">
+    <nav class="breadcrumbs container">
+        <ol class="breadcrumbs__list" role="list">
+            <li class="breadcrumbs__item">
+                <a class="link" href="/">Home </a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="link" href="/">Women </a>
+            </li>
+            <li class="breadcrumbs__item breadcrumbs__item--current">
+                <a class="link" href="/" aria-current="page">White unisex t-shirt </a>
+            </li>
+        </ol>
+    </nav>
     <section class="product" aria-label="Product info">
         <div class="container product__container">
-            <div class="product__media">
-                <img class="product__image" src="assets/images/product.jpg" alt="Girl in white t-shirt"/>
-            </div>
             <div class="product__info">
                 <h2 class="product__name">White unisex t-shirt</h2>
                 <p class="product__size-info">CHF 40</p>
                 <p class="product__tax-info">Tax included</p>
                 <form class="product__form" action="/cart" name="product form">
-                    <div class="product__sizes">
-                        <label class="product__size-label" aria-labelledby="product-sizes">Size</label>
-                        <ul class="product__size-list" id="product-sizes">
-                            <li class="product__size-item radio">
+                    <fieldset class="product__sizes">
+                        <legend class="product__size-label" aria-labelledby="product-sizes">Size</legend>
+                        <div class="product__size-list" id="product-sizes">
+                            <div class="product__size-item radio">
                                 <input type="radio" id="xs" name="sizes" value="xs" class="radio__input">
                                 <label class="radio__label" title="Xs" for="xs">xs</label>
-                            </li>
-                            <li class="product__size-item radio">
+                            </div>
+                            <div class="product__size-item radio">
                                 <input type="radio" id="s" name="sizes" value="s" class="radio__input" checked>
                                 <label class="radio__label" title="S" for="s">s</label>
-                            </li>
-                            <li class="product__size-item radio">
+                            </div>
+                            <div class="product__size-item radio">
                                 <input type="radio" id="m" name="sizes" class="radio__input" value="m">
                                 <label class="radio__label" title="M" for="m">m</label>
-                            </li>
-                            <li class="product__size-item radio">
+                            </div>
+                            <div class="product__size-item radio">
                                 <input type="radio" id="l" name="sizes" class="radio__input" value="l">
                                 <label class="radio__label" title="L" for="l">l</label>
-                            </li>
-                            <li class="product__size-item radio">
+                            </div>
+                            <div class="product__size-item radio">
                                 <input type="radio" id="xl" name="sizes" class="radio__input" value="xl">
                                 <label class="radio__label" title="Xl" for="xl">xl</label>
-                            </li>
-                            <li class="product__size-item product__size-item--out-of-stock radio">
+                            </div>
+                            <div class="product__size-item product__size-item--out-of-stock radio">
                                 <input type="radio" id="2xl" name="sizes" class="radio__input" value="2xl">
                                 <label class="radio__label" title="2xl" for="2xl">2xl</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="product__colors">
-                        <label class="product__color-label" aria-labelledby="product-colors">Color - <span
-                                data-color-value>White</span></label>
-                        <ul class="product__color-list" id="product-colors">
-                            <li class="product__color-item product__color-item--white radio">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="product__colors">
+                        <legend class="product__color-label" aria-labelledby="product-colors">Color - <span
+                                data-color-value>White</span></legend>
+                        <div class="product__color-list" id="product-colors">
+                            <div class="product__color-item product__color-item--white radio">
                                 <input type="radio" id="white" name="colors" class="radio__input" value="White" checked>
                                 <label class="radio__label" title="White" for="white"><span class="visually-hidden">white</span></label>
-                            </li>
-                            <li class="product__color-item product__color-item--black radio">
+                            </div>
+                            <div class="product__color-item product__color-item--black radio">
                                 <input type="radio" id="black" class="radio__input" name="colors" value="Black">
                                 <label class="radio__label" title="Black" for="black"><span class="visually-hidden">black</span></label>
-                            </li>
-                            <li class="product__color-item product__color-item--gray radio">
+                            </div>
+                            <div class="product__color-item product__color-item--gray radio">
                                 <input type="radio" id="gray" class="radio__input" name="colors" value="Gray">
                                 <label class="radio__label" title="Gray" for="gray"><span
                                         class="visually-hidden">gray</span></label>
-                            </li>
-                            <li class="product__color-item product__color-item--purple radio">
+                            </div>
+                            <div class="product__color-item product__color-item--purple radio">
                                 <input type="radio" id="purple" class="radio__input" name="colors" value="Purple">
                                 <label class="radio__label" title="Purple" for="purple"><span class="visually-hidden">purple</span></label>
-                            </li>
-                            <li class="product__color-item  product__color-item--pink product__color-item--out-of-stock radio">
+                            </div>
+                            <div class="product__color-item  product__color-item--pink product__color-item--out-of-stock radio">
                                 <input type="radio" id="pink" class="radio__input" name="colors" value="pink">
                                 <label class="radio__label" title="Pink" for="pink"><span
                                         class="visually-hidden">pink</span></label>
-                            </li>
-                            <li class="product__color-item  product__color-item--orange product__color-item--out-of-stock radio">
+                            </div>
+                            <div class="product__color-item  product__color-item--orange product__color-item--out-of-stock radio">
                                 <input type="radio" id="orange" class="radio__input" name="colors" value="orange">
                                 <label class="radio__label" title="Orange" for="orange"><span class="visually-hidden">orange</span></label>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
+                        </div>
+                    </fieldset>
                     <div class="product__count">
-                        <label for="product-count">Qantity</label>
+                        <label for="product-count">Quantity</label>
                         <div class="product__count-wrapper">
                             <button class="product__count-button product__count-button--reduce" type="button"
                                     aria-label="Reduce count">-
@@ -138,11 +134,13 @@
                     </div>
                     <div class="product__cta">
                         <button type="button"
-                                class="button button--primary button--full-width product__button product__button--add-to-cart">
+                                class="button button--primary button--full-width product__button product__button--add-to-cart"
+                                aria-label="White unisex t-shirt">
                             Add to cart
                         </button>
                         <button type="submit"
-                                class="button button--secondary button--full-width product__button product__button--buy-now">
+                                class="button button--secondary button--full-width product__button product__button--buy-now"
+                        aria-label="White unisex t-shirt">
                             Buy it now
                         </button>
                     </div>
@@ -152,11 +150,14 @@
                     <p class="product__certification-info">Certification of cotton - GOTS</p>
                 </form>
             </div>
+            <div class="product__media">
+                <img class="product__image" src="assets/images/product.jpg" alt="Girl in white t-shirt"/>
+            </div>
         </div>
         <div class="product__description container">
             <div id="description-accordion" class="product__accordion accordion">
                 <div class="accordion__item">
-                    <h3 class="product__tab-heading accordion__heading">
+                    <h2 class="product__tab-heading accordion__heading">
                         <button type="button" class="accordion__button" aria-expanded="true" aria-controls="sizing"
                                 id="size-name">
       <span class="accordion__title">
@@ -164,7 +165,7 @@
         <span class="accordion__icon"></span>
       </span>
                         </button>
-                    </h3>
+                    </h2>
                     <div id="sizing"
                          role="region"
                          aria-labelledby="size-name"
@@ -176,7 +177,8 @@
                 </div>
                 <div class="accordion__item">
                     <h3 class="product__tab-heading accordion__heading">
-                        <button type="button" class="accordion__button" aria-expanded="false" aria-controls="composition"
+                        <button type="button" class="accordion__button" aria-expanded="false"
+                                aria-controls="composition"
                                 id="composition-name">
                         <span class="accordion__title">
         Composition & Care
@@ -217,14 +219,15 @@
     </section>
     <section class="reference container" aria-label="Reference products">
         <h2 class="reference__heading">You may also like</h2>
-        <ul class="reference__list">
+        <ul class="reference__list" role="list">
             <li class="reference__item">
                 <article class="reference-card">
                     <div class="reference-card__media">
                         <img class="reference__image" src="assets/images/rec1.png" alt="Girl in pink hoodies"/>
                     </div>
                     <h3 class="reference-card__heading">Product name</h3>
-                    <ul class="reference-card__colors">
+                    <label aria-labelledby="colors__1" class="visually-hidden">Product name</label>
+                    <ul id="colors__1" class="reference-card__colors">
                         <li class="reference-card__color-item reference-card__color-item--brown">
                             <label class="visually-hidden">Brown</label>
                         </li>
@@ -247,7 +250,8 @@
                         <img class="reference__image" src="assets/images/rec2.png" alt="Girl in pink hoodies"/>
                     </div>
                     <h3 class="reference-card__heading">Product name</h3>
-                    <ul class="reference-card__colors">
+                    <label aria-labelledby="colors__2" class="visually-hidden">Product name</label>
+                    <ul id="colors__2" class="reference-card__colors">
                         <li class="reference-card__color-item reference-card__color-item--brown">
                             <label class="visually-hidden">Brown</label>
                         </li>
@@ -273,7 +277,8 @@
                         </ul>
                     </div>
                     <h3 class="reference-card__heading">Product name</h3>
-                    <ul class="reference-card__colors">
+                    <label aria-labelledby="colors__3" class="visually-hidden">Product name</label>
+                    <ul id="colors__3" class="reference-card__colors">
                         <li class="reference-card__color-item reference-card__color-item--brown">
                             <label class="visually-hidden">Brown</label>
                         </li>
@@ -296,7 +301,8 @@
                         <img class="reference__image" src="assets/images/rec4.png" alt="Girl in pink hoodies"/>
                     </div>
                     <h3 class="reference-card__heading">Product name</h3>
-                    <ul class="reference-card__colors">
+                    <label aria-labelledby="colors__4" class="visually-hidden">Product name</label>
+                    <ul id="colors__4" class="reference-card__colors">
                         <li class="reference-card__color-item reference-card__color-item--brown">
                             <label class="visually-hidden">Brown</label>
                         </li>
@@ -321,41 +327,49 @@
         <div class="footer__container-list">
             <div class="footer__item">
                 <h2 class="footer__heading" id="about">About</h2>
-                <ul aria-labelledby="about" class="footer__list">
-                    <li class="footer__list-item">Susparsa store</li>
-                    <li class="footer__list-item">Geneva, Switzerland</li>
-                    <li class="footer__list-item footer__list-item--socials">
-                        <a class="footer__social-link" href="/">
-                            <img class="footer__social-image" src="assets/images/facebook.svg" alt="Facebook icon">
-                        </a>
-                        <a class="footer__social-link" href="/">
-                            <img class="footer__social-image" src="assets/images/instagram.svg" alt="Instagram icon">
-                        </a>
-                    </li>
-                </ul>
+                <address aria-labelledby="about" class="footer__list">
+                    <div class="footer__list-item">Susparsa store</div>
+                    <div class="footer__list-item">Geneva, Switzerland</div>
+                    <ul class="footer__list-item footer__list-item--socials" role="list">
+                        <li>
+                            <a class="footer__social-link" href="/">
+                                <img class="footer__social-image" src="assets/images/facebook.svg" alt="Facebook icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer__social-link" href="/">
+                                <img class="footer__social-image" src="assets/images/instagram.svg" alt="Instagram icon">
+                            </a>
+                        </li>
+                    </ul>
+                </address>
             </div>
-            <div class="footer__item">
+            <section class="footer__item">
                 <h2 class="footer__heading" id="company">Company</h2>
-                <ul aria-labelledby="company" class="footer__list">
-                    <li class="footer__list-item">Women</li>
-                    <li class="footer__list-item">Men</li>
-                    <li class="footer__list-item">Kids</li>
-                    <li class="footer__list-item">About us</li>
-                    <li class="footer__list-item">Our materials</li>
-                </ul>
-            </div>
-            <div class="footer__item">
+                <nav>
+                    <ul aria-labelledby="company" class="footer__list">
+                        <li class="footer__list-item">Women</li>
+                        <li class="footer__list-item">Men</li>
+                        <li class="footer__list-item">Kids</li>
+                        <li class="footer__list-item">About us</li>
+                        <li class="footer__list-item">Our materials</li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="footer__item">
                 <h2 class="footer__heading" id="useful_links">Useful links</h2>
-                <ul aria-labelledby="useful_links" class="footer__list">
-                    <li class="footer__list-item">Privacy Policy</li>
-                    <li class="footer__list-item">Shipping policy</li>
-                    <li class="footer__list-item">Return & Refund policy</li>
-                    <li class="footer__list-item">Terms of Service</li>
-                    <li class="footer__list-item">Contact us</li>
-                </ul>
-            </div>
+                <nav>
+                    <ul aria-labelledby="useful_links" class="footer__list">
+                        <li class="footer__list-item">Privacy Policy</li>
+                        <li class="footer__list-item">Shipping policy</li>
+                        <li class="footer__list-item">Return & Refund policy</li>
+                        <li class="footer__list-item">Terms of Service</li>
+                        <li class="footer__list-item">Contact us</li>
+                    </ul>
+                </nav>
+            </section>
         </div>
-        <p class="footer__copyright">© Susparsa 2021</p>
+        <small class="footer__copyright">© Susparsa 2021</small>
     </div>
 </footer>
 </body>
