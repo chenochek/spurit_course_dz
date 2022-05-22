@@ -662,10 +662,14 @@ body {
 }
 
 .accordion__button {
-    border: none;
+    border: transparent;
     background-color: transparent;
     outline: none;
-    padding: 0;
+    padding: 5px;
+}
+
+.accordion__button:focus {
+    border: 2px solid var(--palette-mirage);
 }
 
 .accordion__icon {
